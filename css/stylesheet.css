@@ -1,0 +1,218 @@
+/* Initial config */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li,
+ul,
+a,
+p,
+h1 {
+  list-style: none;
+  text-decoration: none;
+  color: var(--black);
+}
+
+:root {
+  --pink--light: #fff5fc;
+  --pink--light--dark: #ffa0d0;
+  --pink--light--dark--light: #ffe6f8;
+  --pink--light--dark--dark: #ffdcf5;
+  --black: #191718;
+  --black--light: #4c454a;
+  --black--light--light: #7f737c;
+  --white: #ffffff;
+}
+
+/* Fonts */
+
+.title {
+  /* For big titles, like my name. */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(2rem, -0.9561rem + 6.7568vw, 5.125rem);
+
+  letter-spacing: -0.06em;
+}
+
+.title--sub {
+  /* Its the subtitle for title. */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(1.5rem, -0.7466rem + 5.1351vw, 3.875rem);
+
+  letter-spacing: -0.06em;
+
+  color: var(--black--light);
+}
+
+.title--sub--sub {
+  /* It's the second and final subtitle. */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(1rem, 0.0541rem + 2.1622vw, 2rem);
+  line-height: 48px;
+  letter-spacing: -0.06em;
+}
+
+.title--header {
+  /* This is a font for the header. */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0.75rem, 0.0405rem + 1.6216vw, 1.5rem);
+
+  letter-spacing: -0.06em;
+
+  color: var(--black);
+}
+
+.paragraph--large {
+  /* The paragraphs in large version. */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 0.0405rem + 1.6216vw, 1.5rem);
+  line-height: 42px;
+  letter-spacing: -0.06em;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+
+  top: 28px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  z-index: 1;
+}
+
+.header__row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: clamp(0.75rem, -0.3142rem + 2.4324vw, 1.875rem);
+
+  > .title--header {
+    z-index: 1;
+
+    padding: 10px;
+  }
+
+  > .title--header:hover {
+    background-color: var(--pink--light--dark--light);
+    border-radius: 50px;
+
+    cursor: pointer;
+  }
+
+  > div {
+    height: clamp(50px, 2.7027px + 6.7568vw, 100px);
+    width: clamp(260px, -203.5135px + 66.2162vw, 750px);
+    position: absolute;
+
+    background-color: var(--pink--light);
+    border: solid 1px var(--black--light--light);
+    border-radius: 50px;
+  }
+}
+
+/* Containers */
+
+.description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 90%;
+
+  top: clamp(100px, 81.0811px + 2.7027vw, 120px);
+  left: clamp(12px, -35.2973px + 6.7568vw, 62px);
+}
+
+.description__title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.description__sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: clamp(20px, -33.9189px + 7.7027vw, 77px);
+
+  > div + div {
+    width: clamp(300px, 135.4054px + 23.5135vw, 474px);
+    height: clamp(300px, 135.4054px + 23.5135vw, 474px);
+
+    background-image: url("../assets/image/main-page-image.png");
+    background-size: cover;
+  }
+}
+
+.description__sub__text {
+  display: flex;
+  flex-direction: column;
+
+  width: clamp(320px, -53.6486px + 53.3784vw, 715px);
+}
+
+/* Background */
+
+.background {
+  background: var(--pink--light--dark);
+  position: fixed;
+
+  top: -159px;
+  left: clamp(12px, -35.2973px + 6.7568vw, 62px);
+
+  z-index: -1;
+
+  width: 792px;
+  height: 1037px;
+
+  transform: rotate(23.93deg);
+
+  + .background {
+    top: 20px;
+
+    background-color: var(--pink--light--dark--dark);
+  }
+
+  + .background + .background {
+    top: 200px;
+
+    background-color: var(--pink--light--dark--light);
+  }
+
+  + .background:last-of-type {
+    top: 380px;
+
+    background-color: var(--pink--light);
+  }
+}
