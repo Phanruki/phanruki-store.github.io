@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -17,7 +18,9 @@
     />
   </head>
   <body>
-    <header class="header">
+    <div class="loader title" id="loader">Cargando...</div>
+
+    <header class="header" id="header">
       <nav class="header__row">
         <a class="title--header">Acerca de</a>
         <a class="title--header">Llaveros</a>
@@ -34,7 +37,7 @@
       <div class="description__sub">
         <div class="description__sub__text">
           <p class="paragraph--large">
-            Una pequeña idea de emprendimiento local.Estamos comenzando con un
+            Una pequeña idea de emprendimiento local. Estamos comenzando con un
             producto simple.
           </p>
           <p class="title--sub--sub">Llaveros.</p>
@@ -51,11 +54,43 @@
       </div>
     </div>
 
+    <div class="description__location">
+      <h2 class="title">Ubicaciones de Entrega</h2>
+      <div class="location">
+        <div class="location__box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14947.4336677883!2d-97.43857615276278!3d20.512029493538535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTkg44Or44Kk44K544O744OJ44OK44Or44OJ44O744Kz44Ot44K344KqLCBQb3phIFJpY2EsIFZlcmFjcnV6!5e0!3m2!1sen!2smx!4v1737407788168!5m2!1sen!2smx"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="paragraph--large">Colonia: Perlas del Oriente.</p>
+          <p class="paragraph--large">Calle: Perlas.</p>
+          <p class="paragraph--large">Horario:</p>
+        </div>
+        <div class="location__box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7473.932343409981!2d-97.44684728980951!3d20.507612959153192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da6a86ae309d99%3A0x7fb5cee753f3a0cd!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electr%C3%B3nica%20y%20Comunicaciones%2C%20UV!5e0!3m2!1sen!2smx!4v1737410220234!5m2!1sen!2smx"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="paragraph--large">Universidad Veracruzana — Poza Rica.</p>
+          <p class="paragraph--large">Facultad de Ingenieria.</p>
+          <p class="paragraph--large">Horario:</p>
+        </div>
+      </div>
+    </div>
+
     <div>
       <div class="background"></div>
       <div class="background"></div>
       <div class="background"></div>
       <div class="background"></div>
     </div>
+
+    <script src="../js/main.js"></script>
   </body>
 </html>
