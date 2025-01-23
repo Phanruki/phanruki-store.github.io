@@ -27,6 +27,11 @@ h1 {
   --white: #ffffff;
 }
 
+.flex {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 /* Animation */
 
 @keyframes fadeOut {
@@ -78,6 +83,16 @@ h1 {
   font-weight: 600;
   font-size: clamp(1.375rem, 0.7838rem + 1.3514vw, 2rem);
   letter-spacing: -0.06em;
+}
+
+.title--large--sub--sub {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: -0.06em;
+
+  color: var(--black);
 }
 
 .title--header {
@@ -164,6 +179,54 @@ h1 {
     background-color: var(--pink--light);
     border: solid 1px var(--black--light--light);
     border-radius: 50px;
+  }
+}
+
+/* Container */
+
+.description {
+  position: relative;
+
+  width: 90dvw;
+
+  top: clamp(100px, 81.0811px + 2.7027vw, 120px);
+  left: clamp(12px, -35.2973px + 6.7568vw, 62px);
+  gap: 20px;
+
+  padding-bottom: clamp(20px, 20dvh, 50px);
+
+  > .description__title {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: clamp(5px, -9.1892px + 2.027vw, 20px);
+  }
+
+  .description__sub {
+    flex-flow: row nowrap;
+
+    width: 90dvw;
+    gap: clamp(20px, -33.9189px + 7.7027vw, 77px);
+
+    @media (max-width: 700px) {
+      flex-wrap: wrap;
+    }
+
+    > div:last-child {
+      flex-shrink: 1;
+      height: 474px;
+      width: 474px;
+
+      background-image: url("../assets/image/main-page-image.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    > .description__sub__text {
+      flex-shrink: 1.5;
+    }
   }
 }
 

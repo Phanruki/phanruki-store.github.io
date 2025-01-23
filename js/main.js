@@ -1,6 +1,9 @@
 /* Loader */
-window.onload = () => {
-    document.getElementById("loader").style.opacity = '0';
+window.onload = async () => {
+    document.getElementById("loader").style.animation = "fadeOut 2s";
+    setTimeout(() => {
+        document.getElementById("loader").style.visibility = 'hidden';
+    },2000);
 }
 
 /* Header */
@@ -14,5 +17,6 @@ window.addEventListener("scroll", function () {
         document.getElementById("header").style.opacity = "0";
     } else {
         document.getElementById("header").style.animation = "fadeIn 2s";
+        document.getElementById("header").style.opacity = "1";
     }
 })
