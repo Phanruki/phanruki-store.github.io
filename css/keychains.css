@@ -1,0 +1,36 @@
+h2.title--sub {
+  color: var(--black);
+}
+
+.keychain {
+  flex-flow: row nowrap;
+
+  width: 90dvw;
+
+  gap: clamp(150px, -83.3333px + 33.3333vw, 250px);
+
+  @media (max-width: 850px) {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .keychain__container {
+    flex-flow: column nowrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    > .image {
+      background-image: url("../assets/image/main-page-image.png");
+      height: clamp(288px, 112.0541px + 25.1351vw, 474px);
+    }
+
+    > .keychain__text {
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+
+      max-height: 80px;
+      gap: 20px;
+    }
+  }
+}
