@@ -20,7 +20,7 @@
   }
 
   > .image {
-    background-image: url("../assets/image/main-page-image.png");
+    background-image: url("../assets/images/main-page-image.png");
 
     height: 474px;
     width: 474px;
@@ -28,6 +28,7 @@
 
   > .description__sub__text {
     flex-shrink: 1.5;
+    max-width: 715px;
   }
 }
 
@@ -47,8 +48,8 @@
     flex-flow: column nowrap;
     flex-shrink: 1;
 
-    width: clamp(250px, 38.1081px + 30.2703vw, 474px);
-    height: clamp(250px, 38.1081px + 30.2703vw, 474px);
+    width: clamp(300px, 38.1081px + 30.2703vw, 474px);
+    height: clamp(400px, 38.1081px + 30.2703vw, 474px);
 
     > iframe {
       flex-shrink: 1;

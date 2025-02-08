@@ -17,10 +17,11 @@ h1 {
 }
 
 :root {
-  --pink--light: #fff5fc;
-  --pink--light--dark: #ffa0d0;
-  --pink--light--dark--light: #ffe6f8;
-  --pink--light--dark--dark: #ffdcf5;
+  --pink--dark: #ffc499;
+  --pink--light--light: #ffdadf;
+  --pink--light: #f6cee6;
+  --pink--light--dark: #dfc3ee;
+  --pink--light--dark--dark: #d1cafd;
   --black: #191718;
   --black--light: #4c454a;
   --black--light--light: #7f737c;
@@ -56,49 +57,59 @@ h1 {
 
 .title {
   /* For big titles, like my name. */
-
-  font-family: "Poppins";
+  font-family: "Pridi";
   font-style: normal;
   font-weight: 600;
   font-size: clamp(2rem, -0.9561rem + 6.7568vw, 5.125rem);
+  letter-spacing: -0.06em;
+
+  color: var(--black);
+  -webkit-text-stroke: 4px var(--white);
+  paint-order: stroke fill;
 }
 
 .title--sub {
   /* Its the subtitle for title. */
 
-  font-family: "Poppins";
+  font-family: "Pridi";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: clamp(1.5rem, -0.7466rem + 5.1351vw, 3.875rem);
   letter-spacing: -0.06em;
 
-  color: var(--black--light);
+  color: var(--white);
+  -webkit-text-stroke: 3px var(--black--light--light);
+  paint-order: stroke fill;
 }
 
 .title--sub--sub {
   /* It's the second and final subtitle. */
 
-  font-family: "Poppins";
+  font-family: "Pridi";
   font-style: normal;
   font-weight: 600;
   font-size: clamp(1.375rem, 0.7838rem + 1.3514vw, 2rem);
   letter-spacing: -0.06em;
+  -webkit-text-stroke: 4px var(--white);
+  paint-order: stroke fill;
 }
 
 .title--large--sub--sub {
-  font-family: "Poppins";
+  font-family: "Pridi";
   font-style: normal;
   font-weight: 600;
   font-size: clamp(1.375rem, -1.25rem + 6vw, 2.5rem);
   letter-spacing: -0.06em;
 
   color: var(--black);
+  -webkit-text-stroke: 4px var(--white);
+  paint-order: stroke fill;
 }
 
 .title--header {
   /* This is a font for the header. */
 
-  font-family: "Poppins";
+  font-family: "Pridi";
   font-style: normal;
   font-weight: 400;
   font-size: clamp(0.75rem, 0.0405rem + 1.6216vw, 1.5rem);
@@ -117,6 +128,9 @@ h1 {
   font-weight: 500;
   font-size: clamp(1.125rem, 0.7703rem + 0.8108vw, 1.5rem);
   letter-spacing: -0.06em;
+
+  -webkit-text-stroke: 2px var(--white);
+  paint-order: stroke fill;
 }
 
 /* Loader */
@@ -158,7 +172,7 @@ h1 {
     gap: clamp(0.75rem, -0.3142rem + 2.4324vw, 1.875rem);
 
     > .title--header:hover {
-      background-color: var(--pink--light--dark--light);
+      background-color: var(--pink--light);
       border-radius: 50px;
 
       cursor: pointer;
@@ -169,8 +183,8 @@ h1 {
       width: clamp(260px, -203.5135px + 66.2162vw, 750px);
       position: absolute;
 
-      background-color: var(--pink--light);
-      border: solid 1px var(--black--light--light);
+      background-color: var(--white);
+      border: solid 1px var(--black);
       border-radius: 50px;
 
       z-index: -1;
@@ -204,7 +218,7 @@ h1 {
 /* Button */
 
 .button {
-  background-color: var(--pink--light--dark);
+  background-color: var(--white);
 
   flex-grow: 1;
   flex-shrink: 1;
@@ -219,10 +233,10 @@ h1 {
 /* Background */
 
 .background {
-  background: var(--pink--light--dark);
+  background: var(--pink--light--dark--dark);
   position: fixed;
 
-  top: -159px;
+  top: -160px;
   left: clamp(12px, -35.2973px + 6.7568vw, 62px);
 
   z-index: -1;
@@ -234,19 +248,32 @@ h1 {
 
   + .background {
     top: 20px;
+    left: 160px;
 
-    background-color: var(--pink--light--dark--dark);
+    @media (max-width: 700px) {
+      left: 0px;
+    }
+
+    background-color: var(--pink--light--dark);
   }
 
   + .background + .background {
     top: 200px;
+    left: 320px;
+    @media (max-width: 700px) {
+      left: 0px;
+    }
 
-    background-color: var(--pink--light--dark--light);
+    background-color: var(--pink--light);
   }
 
   + .background:last-of-type {
     top: 380px;
+    left: 480px;
+    @media (max-width: 700px) {
+      left: 0px;
+    }
 
-    background-color: var(--pink--light);
+    background-color: var(--pink--light--light);
   }
 }
