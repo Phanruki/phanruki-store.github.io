@@ -164,8 +164,9 @@ h1 {
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 
+    width: max-content;
+    
     justify-content: center;
     align-items: center;
 
