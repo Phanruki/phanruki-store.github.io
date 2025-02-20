@@ -20,13 +20,13 @@
       }
 
       > .image {
-        background-image: url("../assets/images/images__works/llavero_9.png");
+        background-image: url("../assets/images/images__works/llavero_9.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
         background-position: 50%;
       }
 
       > .image + .image {
-        background-image: url("../assets/images/images__works/llavero_10.png");
+        background-image: url("../assets/images/images__works/llavero_10.webp");
       }
     }
 
@@ -45,13 +45,13 @@
         gap: 12px;
       }
       > .image {
-        background-image: url("../assets/images/images__works/llavero_11.png");
+        background-image: url("../assets/images/images__works/llavero_11.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
         background-position: 50%;
       }
 
       > .image + .image {
-        background-image: url("../assets/images/images__works/llavero_12.png");
+        background-image: url("../assets/images/images__works/llavero_12.webp");
       }
     }
 
@@ -71,13 +71,13 @@
       }
 
       > .image {
-        background-image: url("../assets/images/images__works/llavero_13.png");
+        background-image: url("../assets/images/images__works/llavero_13.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
         background-position: 50%;
       }
 
       > .image + .image {
-        background-image: url("../assets/images/images__works/llavero_14.png");
+        background-image: url("../assets/images/images__works/llavero_14.webp");
       }
     }
 
@@ -97,13 +97,13 @@
       }
 
       > .image {
-        background-image: url("../assets/images/images__works/llavero_15.png");
+        background-image: url("../assets/images/images__works/llavero_15.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
         background-position: 50%;
       }
 
       > .image + .image {
-        background-image: url("../assets/images/images__works/llavero_16.png");
+        background-image: url("../assets/images/images__works/llavero_16.webp");
       }
     }
   }
@@ -126,76 +126,13 @@
       }
 
       > .image {
-        background-image: url("../assets/images/images__works/llavero_1.png");
+        background-image: url("../assets/images/images__works/llavero_23.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
         background-position: 50%;
       }
 
       > .image + .image {
-        background-image: url("../assets/images/images__works/llavero_2.png");
-      }
-    }
-
-    > .keychain__container:nth-child(2) {
-      flex-flow: row wrap;
-      width: 90dvw;
-      gap: clamp(150px, -83.3333px + 33.3333vw, 250px);
-
-      @media (max-width: 850px) {
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-
-      > .image {
-        background-image: url("../assets/images/images__works/llavero_3.png");
-        height: clamp(288px, 112.0541px + 25.1351vw, 474px);
-        background-position: 50%;
-      }
-
-      > .image + .image {
-        background-image: url("../assets/images/images__works/llavero_4.png");
-      }
-    }
-
-    > .keychain__container:nth-child(3) {
-      flex-flow: row wrap;
-      width: 90dvw;
-      gap: clamp(150px, -83.3333px + 33.3333vw, 250px);
-
-      @media (max-width: 850px) {
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-
-      > .image {
-        background-image: url("../assets/images/images__works/llavero_5.png");
-        height: clamp(288px, 112.0541px + 25.1351vw, 474px);
-        background-position: 50%;
-      }
-
-      > .image + .image {
-        background-image: url("../assets/images/images__works/llavero_6.png");
-      }
-    }
-
-    > .keychain__container:last-child {
-      flex-flow: row wrap;
-      width: 90dvw;
-      gap: clamp(150px, -83.3333px + 33.3333vw, 250px);
-
-      @media (max-width: 850px) {
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-
-      > .image {
-        background-image: url("../assets/images/images__works/llavero_7.png");
-        height: clamp(288px, 112.0541px + 25.1351vw, 474px);
-        background-position: 50%;
-      }
-
-      > .image + .image {
-        background-image: url("../assets/images/images__works/llavero_8.png");
+        background-image: url("../assets/images/images__works/llavero_24.webp");
       }
     }
   }

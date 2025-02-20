@@ -19,7 +19,7 @@
       gap: 12px;
 
       > .image {
-        background-image: url("../assets/images/keychain_30.png");
+        background-image: url("../assets/images/keychain_30.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
       }
 
@@ -33,27 +33,25 @@
 
     > .keychain__container + .keychain__container {
       > .image {
-        background-image: url("../assets/images/keychain_40.png");
+        background-image: url("../assets/images/keychain_40.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
       }
     }
   }
 
-  +.description > .keychain {
+  + .description > .keychain {
     .keychain__container {
       > .image {
-        background-image: url("../assets/images/keychain_55.png");
+        background-image: url("../assets/images/keychain_55.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
       }
     }
-  
+
     > .keychain__container + .keychain__container {
       > .image {
-        background-image: url("../assets/images/keychain_95.png");
+        background-image: url("../assets/images/keychain_95.webp");
         height: clamp(288px, 112.0541px + 25.1351vw, 474px);
       }
     }
   }
 }
-
-
