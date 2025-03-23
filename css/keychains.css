@@ -1,56 +1,57 @@
-.description {
-  .keychain {
-    flex-flow: row nowrap;
+.description__keychain {
+  .description {
+    .keychain {
+      flex-flow: row nowrap;
 
-    width: 90dvw;
+      width: 90dvw;
 
-    gap: clamp(150px, -83.3333px + 33.3333vw, 250px);
-
-    @media (max-width: 850px) {
-      flex-wrap: wrap;
       gap: 50px;
-    }
 
-    .keychain__container {
-      flex-flow: column nowrap;
-      flex-shrink: 1;
-      flex-grow: 1;
-
-      gap: 12px;
-
-      > .image {
-        background-image: url("../assets/images/keychain_30.webp");
-        height: clamp(288px, 112.0541px + 25.1351vw, 474px);
+      @media (max-width: 540px) {
+        flex-wrap: wrap;
       }
 
-      > .keychain__text {
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-      }
-    }
+      .keychain__container {
+        flex-flow: column nowrap;
+        flex-shrink: 1;
+        flex-grow: 1;
 
-    > .keychain__container + .keychain__container {
-      > .image {
-        background-image: url("../assets/images/keychain_40.webp");
-        height: clamp(288px, 112.0541px + 25.1351vw, 474px);
-      }
-    }
-  }
+        gap: 12px;
 
-  + .description > .keychain {
-    .keychain__container {
-      > .image {
-        background-image: url("../assets/images/keychain_55.webp");
-        height: clamp(288px, 112.0541px + 25.1351vw, 474px);
+        > .image {
+          background-image: url("../assets/images/keychain_30.webp");
+          height: clamp(288px, 112.0541px + 25.1351vw, 474px);
+        }
+
+        > .keychain__text {
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+        }
+      }
+
+      > .keychain__container + .keychain__container {
+        > .image {
+          background-image: url("../assets/images/keychain_40.webp");
+          height: clamp(288px, 112.0541px + 25.1351vw, 474px);
+        }
       }
     }
 
-    > .keychain__container + .keychain__container {
-      > .image {
-        background-image: url("../assets/images/keychain_95.webp");
-        height: clamp(288px, 112.0541px + 25.1351vw, 474px);
+    + .description > .keychain {
+      .keychain__container {
+        > .image {
+          background-image: url("../assets/images/keychain_55.webp");
+          height: clamp(288px, 112.0541px + 25.1351vw, 474px);
+        }
+      }
+
+      > .keychain__container + .keychain__container {
+        > .image {
+          background-image: url("../assets/images/keychain_95.webp");
+          height: clamp(288px, 112.0541px + 25.1351vw, 474px);
+        }
       }
     }
   }
